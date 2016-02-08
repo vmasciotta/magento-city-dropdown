@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<config>
+    <modules>
+        <Vmasciotta_CityDropdown>
+            <version>1.0.0</version>
+        </Vmasciotta_CityDropdown>
+    </modules>
+    <global>
+        <models>
+            <vmasciotta_citydropdown>
+                <class>Vmasciotta_CityDropdown_Model</class>
+                <resourceModel>vmasciotta_citydropdown_resource</resourceModel>
+            </vmasciotta_citydropdown>
+
+            <vmasciotta_citydropdown_resource>
+                <class>Vmasciotta_CityDropdown_Model_Resource</class>
+                <entities>
+                    <country_region_city>
+                        <table>vmasciotta_country_region_city</table>
+                    </country_region_city>
+                    <country_region_city_name>
+                        <table>vmasciotta_country_region_city_name</table>
+                    </country_region_city_name>
+                </entities>
+            </vmasciotta_citydropdown_resource>
+        </models>
+
+        <helpers>
+            <vmasciotta_citydropdown>
+                <class>Vmasciotta_CityDropdown_Helper</class>
+            </vmasciotta_citydropdown>
+        </helpers>
+
+        <resources>
+            <vmasciotta_citydropdown_setup>
+                <setup>
+                    <module>Vmasciotta_CityDropdown</module>
+                    <class>Mage_Core_Model_Resource_Setup</class>
+                </setup>
+            </vmasciotta_citydropdown_setup>
+        </resources>
+    </global>
+
+    <frontend>
+        <layout>
+            <updates>
+                <vmasciotta_citydropdown>
+                    <file>vmasciotta/citydropdown/vmasciotta_citydropdown.xml</file>
+                </vmasciotta_citydropdown>
+            </updates>
+        </layout>
+    </frontend>
+</config>

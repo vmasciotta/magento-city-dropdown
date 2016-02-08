@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<layout>
+    <default>
+
+    </default>
+    <checkout_onepage_index>
+        <reference name="checkout.onepage.billing">
+            <action method="setTemplate">
+                <template>vmasciotta/citydropdown/persistent/checkout/onepage/billing.phtml</template>
+            </action>
+        </reference>
+    </checkout_onepage_index>
+</layout>
